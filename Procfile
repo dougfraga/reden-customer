@@ -1,0 +1,1 @@
+web: gunicorn reden.wsgi --log-file -
