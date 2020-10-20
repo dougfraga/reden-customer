@@ -15,4 +15,7 @@ install:
 
 script:
   - pipenv run flake8
-  - pipenv rin pytest
+  - pipenv run pytest --cov=reden
+
+after_success:
+  - pipenv run codecov
