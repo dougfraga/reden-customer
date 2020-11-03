@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from reden.base.views import home
+from reden.base.views import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', login),
 ]
